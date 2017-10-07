@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Main extends React.Component{
+class Page extends React.Component{
   constructor(props){
     super(props);
   }
@@ -9,11 +9,11 @@ class Main extends React.Component{
     return(
       <div>
         <form>
-          <input class="typeahead" type="text"/>
+          <input type="text"/>
         </form>
       </div>
     );
   }
 }
 
-export default Main;
+export default Page;
