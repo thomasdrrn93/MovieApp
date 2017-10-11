@@ -76,19 +76,21 @@ class Main extends React.Component{
 
   render(){
     return(
-      <div>
+      <div id='app'>
         <div id='search'>
           <form>
             <input className="typeahead" type="text" placeholder='Search for a film'/>
           </form>
         </div>
-        <div id='Main-Container'>
-          <div>
+        <div id='main-container'>
+          <div id="poster-container">
             <img id="poster" src={this.state.poster}/>
           </div>
-          <div>
-            <div>{this.state.title}</div>
-            <div>{this.state.overview}</div>
+          <div id="info-container">
+            <div id="title">
+              <h1>{this.state.title}</h1>
+            </div>
+            <div id="overview">{this.state.overview}</div>
           </div>
         </div>
       </div>
